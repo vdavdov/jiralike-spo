@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <th:block th:fragment="page"
-          th:with="img=${img}?: 'https://javarush.com/assets/images/site/homepage/og-image-jr.jpg', descr=${descr}?: ${title}">
+          th:with="img=${img}?:'https://fototrap.ru/wp-content/uploads/2023/10/programmirovanie-1.webp', descr=${descr}?: ${title}">
     <head>
         <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
         <meta content="width=device-width, initial-scale=1" name="viewport">
@@ -25,7 +25,7 @@
               name="keywords">
         <!-- facebook & Open Graph -->
         <meta content="website" property="og:type"/>
-        <meta content="Jira Rush" property="og:site_name">
+        <meta content="Jira Like" property="og:site_name">
         <meta property="og:title" th:content="${title}"/>
         <meta property="og:description" th:content="${descr}"/>
         <meta property="og:image" th:content="${img}"/>

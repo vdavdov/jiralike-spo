@@ -26,7 +26,7 @@
 	-p 5432:5432 \
 	--name postgres-db \
 	-e POSTGRES_USER=jira \
-	-e POSTGRES_PASSWORD=JiraRush \
+	-e POSTGRES_PASSWORD=jira \
 	-e POSTGRES_DB=jira \
 	-e PGDATA=/var/lib/postgresql/data/pgdata \
 	-v ./pgdata:/var/lib/postgresql/data \
@@ -38,7 +38,7 @@
   ```
   -p 5432:5432 - порт, на котором запускается база данных
   --name postgres-db - имя docker-контейнера
-  -e POSTGRES_PASSWORD=JiraRush - пароль от базы данных
+  -e POSTGRES_PASSWORD=jira - пароль от базы данных
   -e POSTGRES_USER=jira - имя учетной записи пользователя базы данных
   -e POSTGRES_DB=jira - название базы данных
   -e PGDATA=/var/lib/postgresql/data/pgdata - папка, где будут храниться данные
@@ -52,7 +52,7 @@
   1. host - ip-адрес сервера
   2. port - 5432
   3. username - jira
-  4. password - JiraRush
+  4. password - jira
   5. table - jira
   ```
 

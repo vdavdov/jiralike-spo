@@ -5,7 +5,7 @@
 
 ```
 cd /etc/nginx/sites-enabled/
-sudo ln -sfn /opt/jirarush/config/nginx.conf default
+sudo ln -sfn /opt/jiralike/config/nginx.conf default
 cat default
 sudo service nginx reload (start/stop)
 ```
