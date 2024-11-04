@@ -62,7 +62,7 @@ public class MailService {
         try {
             MimeMessage mimeMessage = javaMailSender.createMimeMessage();
             MimeMessageHelper message = new MimeMessageHelper(mimeMessage, "UTF-8");
-            message.setFrom(email, "JiraLike");
+            message.setFrom(email, "JiraRush");
             String content = getContent(template, params);
             message.setText(content, true);
             message.setSubject(Util.getTitle(content));  // TODO calculate title for group emailing only once
