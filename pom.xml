@@ -9,11 +9,11 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
-    <groupId>com.javarush</groupId>
+    <groupId>by.vdavdov</groupId>
     <artifactId>jira</artifactId>
     <version>1.0</version>
-    <name>JiraRush</name>
-    <description>Mini-JIRA from JavaRush</description>
+    <name>JiraLike</name>
+    <description>Mini-JIRA</description>
 
     <properties>
         <java.version>17</java.version>
